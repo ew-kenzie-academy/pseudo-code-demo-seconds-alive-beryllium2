@@ -4,7 +4,7 @@ let _YEAR_  =    prompt("In what year were you born?"  );
 //   convert input into gregorian time
 const birthDayTime = new Date(_YEAR_,_MONTH_, 0, 0, 0, 0, 0);
 //   convert that time to seconds in an inertial frame
-const birthEpoch= birthDayTime.valueOf()/1000;
+  const birthEpoch= birthDayTime.valueOf()/1000;
 // get current date the same
 const currentTime = new Date();
 //   now convert that time the same
