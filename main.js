@@ -21,7 +21,6 @@
 
 
 /*
-
 * Research Notes
 + [[https://www.w3docs.com/snippets/javascript/how-to-get-a-timestamp-in-javascript.html][w3docs::timestamp]]
   *Date.now () Method* =returning the number of the milliseconds, elapsed since the Unix Epoch=
@@ -49,11 +48,11 @@
    birthDay.valueOf();
    #+end_src
 
-* Solution
-  + [2021-06-24 08:44] Just code it. Done.
+* [2021-06-24 08:44] Solution
+  + Just code it. Done.
     #+begin_src bash
-    # $@ formatted timestamp representing birthday.
-    function delBirth(){
+    # $@ formatted timestamp representing birthday
+    function deltaBirth(){
       lambda="$(echo ${@})";
       b=$(date -d "(echo ${lambda})" +"%s");
       n=$(date                       +"%s");
