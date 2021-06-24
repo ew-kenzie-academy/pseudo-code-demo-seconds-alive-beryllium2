@@ -31,22 +31,22 @@
 
 + [[https://www.w3schools.com/js/js_dates.asp][w3schools::js_dates]] 
   *JavaScript Date Objects* 
-   Perhaps there is a way to use OOP to help us in this /dynamic-typed/ language :P
-   ~const d = new Date("October 13, 2014 11:13:00");~
-   #+begin_quote
+  Perhaps there is a way to use OOP to help us in this /dynamic-typed/ language :P
+  ~const d = new Date("October 13, 2014 11:13:00");~
+  #+begin_quote
    new Date()
    new Date(year, month, day, hours, minutes, seconds, milliseconds)
    new Date(milliseconds)
    new Date(date string)
-   #+end_quote
+  #+end_quote
 
 + [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf][mdn::Date/valueOf]]
   *Date.prototype.valueOf()*
-   =The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.=
-   #+begin_src javascript
-   const birthDay = new Date(1971,5, 0, 0, 0, 0, 0);
-   birthDay.valueOf();
-   #+end_src
+  =The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.=
+  #+begin_src javascript
+  const birthDay = new Date(1971,5, 0, 0, 0, 0, 0);
+  birthDay.valueOf();
+  #+end_src
 
 * [2021-06-24 08:44] Solution
   + Just code it. Done.
