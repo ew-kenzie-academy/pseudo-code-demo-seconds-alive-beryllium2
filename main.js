@@ -2,13 +2,13 @@
 
 // 1. prompt birth month and birth year
    let _MONTH_  =   prompt("In what month were you born?" );
-   let _YEAR_  =    prompt("In what year were you born?"  );
+   let _YEAR_   =   prompt("In what year were you born?"  );
 
 //2.  convert input into gregorian time
 //      convert that time to seconds in an inertial frame
     // const birthDayTime = new Date(_YEAR_,_MONTH_, 0, 0, 0, 0, 0);
     let birthDayTime = new Date(""+ _MONTH_ +" 01, "+_YEAR_+" 11:13:00");
-    let birthEpoch       = Math.floor( birthDayTime.valueOf()/1000 );
+    let birthEpoch   = Math.floor( birthDayTime.valueOf()/1000 );
 
 //3. get current date the same
 //     now convert that time the same
@@ -54,7 +54,7 @@
     # $@ formatted timestamp representing birthday
     function deltaBirth(){
       lambda="$(echo ${@})";
-      b=$(date -d "(echo ${lambda})" +"%s");
+      b=$(date -d "${lambda}"        +"%s");
       n=$(date                       +"%s");
       echo $(( $n - $b ));
     }
