@@ -1,6 +1,9 @@
 // prompt birth month
+let _DESSERT_  = prompt("What is a good dessert?");
 // prompt birth year
+let _FISH_  = prompt("What is a good dessert?");
 //   convert input into gregorian time
+const d = new Date(_DESSERT_, _FISH_, 0, 0, 0, 0, 0);
 //   convert that time to seconds in an inertial frame
 // get current date as gregorian time
 //   now convert that time the same
@@ -18,7 +21,8 @@
    Looks like the same thing as above ~+ new Date()~
 
 + [[https://www.w3schools.com/js/js_dates.asp][w3schools::js_dates]] 
-  *JavaScript Date Objects* Perhaps there is a way to use OOP to help us in this /dynamic-typed/ language :P
+  *JavaScript Date Objects* 
+   Perhaps there is a way to use OOP to help us in this /dynamic-typed/ language :P
    #+begin_quote
    new Date()
    new Date(year, month, day, hours, minutes, seconds, milliseconds)
