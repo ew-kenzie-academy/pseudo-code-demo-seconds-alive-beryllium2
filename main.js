@@ -1,13 +1,17 @@
 // prompt birth month, birth year
-let _DESSERT_  = prompt("In what month were you born?" );
+let _MONTH_  =   prompt("In what month were you born?" );
 let _YEAR_  =    prompt("In what year were you born?"  );
 //   convert input into gregorian time
-const birthDay = new Date(_YEAR_,_MONTH_, 0, 0, 0, 0, 0);
+const birthDayTime = new Date(_YEAR_,_MONTH_, 0, 0, 0, 0, 0);
 //   convert that time to seconds in an inertial frame
-const birthEpoch= birthDay.valueOf()/1000;
-// get current date as gregorian time
+const birthEpoch= birthDayTime.valueOf()/1000;
+// get current date the same
+const currentTime = new Date();
 //   now convert that time the same
+const currentEpoch= currentTime.valueOf()/1000;
 // output the difference
+timeDifference=currentEpoch-birthEpoch;
+alert(timeDifference);
 
 
 /*
