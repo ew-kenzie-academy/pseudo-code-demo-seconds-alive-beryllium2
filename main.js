@@ -1,10 +1,10 @@
-// prompt birth month
-let _DESSERT_  = prompt("What is a good dessert?");
-// prompt birth year
-let _FISH_  = prompt("What is a good dessert?");
+// prompt birth month, birth year
+let _DESSERT_  = prompt("In what month were you born?" );
+let _YEAR_  =    prompt("In what year were you born?"  );
 //   convert input into gregorian time
-const d = new Date(_DESSERT_, _FISH_, 0, 0, 0, 0, 0);
+const birthDay = new Date(_YEAR_,_MONTH_, 0, 0, 0, 0, 0);
 //   convert that time to seconds in an inertial frame
+const birthEpoch= birthDay.valueOf()/1000;
 // get current date as gregorian time
 //   now convert that time the same
 // output the difference
@@ -28,7 +28,15 @@ const d = new Date(_DESSERT_, _FISH_, 0, 0, 0, 0, 0);
    new Date(year, month, day, hours, minutes, seconds, milliseconds)
    new Date(milliseconds)
    new Date(date string)
-   #+end_qute
+   #+end_quote
+
++ [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf][mdn::Date/valueOf]]
+  *Date.prototype.valueOf()*
+   =The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.=
+   #+begin_src javascript
+   const birthDay = new Date(1971,5, 0, 0, 0, 0, 0);
+   birthDay.valueOf();
+   #+end_src
 
 * Solution
   + [2021-06-24 08:44] Just code it. Done.
